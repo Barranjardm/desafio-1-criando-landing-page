@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="banner">
@@ -12,47 +13,57 @@
       <div class="logo">
         <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
-      <h1>Trilha de CSS da DIO</h1>
-      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
+      <h1 class="header-bonitinho">TRILHA DE CSS DA DIO</h1>
+      <p id="p-header">A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais</p>
+      <button id="botao" onclick="alert('Veja a minha página primeiro!')">QUERO ME INSCREVER</button>
     </div>
   </header>
+  <hr class="linha">
   <main>
     <section id="course-content">
-      <h2>O que vou aprender?</h2>
+      <h2 id="mainh2">O QUE VOU APRENDER?</h2>
       <p>
-        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
-        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver <br> sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
       </p>
       <div class="modules-list">
         <div class="module">
-          <span>Módulo 01:</span> primeiros passos com CSS
+          <button class="module-btn" onclick="window.open('https://web.dio.me/track/coding-future-front-end-do-zero/course/fundamentos-do-css/learning/094390d1-eaec-4929-8d0b-d87e93019944?autoplay=1', '_blank');">
+            <span>Módulo 01:</span> primeiros passos com CSS
+          </button>
         </div>
         <div class="module">
-          <span>Módulo 02:</span> trabalhando com layouts no CSS
+          <button class="module-btn" onclick="window.open('https://web.dio.me/track/coding-future-front-end-do-zero/course/fundamentos-do-css/learning/8528896e-3f89-415c-9398-774677ae4360?autoplay=1');">
+            <span>Módulo 02:</span> trabalhando com layouts no CSS
+          </button>
         </div>
         <div class="module">
-          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+          <button class="module-btn" onclick="window.open('https://web.dio.me/track/coding-future-front-end-do-zero/course/estilizacoes-basicas-com-css/learning/e020f00c-1df6-43b1-83ae-c45cf428e8fd?autoplay=1');">
+            <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+          </button>
         </div>
       </div>
     </section>
+    <hr class="linha">
     <section id="transform-world">
-      <p>TRANSFORME O MUNDO COM A GENTE</p>
+      <img id="zoiao" src="../desafio-1-criando-landing-page/assets/images/woman-code.png" title="Mulher programando" alt="Mulher programando">
+      <p id="textozoiao">TRANSFORME <br> O MUNDO <br> COM A GENTE</p>
     </section>
+    <hr id="linha2">
     <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <h2 id="header2">Evolua e encare novos desafios <br> profissionais</h2>
+      <img id="homem-tablet" src="../desafio-1-criando-landing-page/assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
       <p>
-        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas <br> 
         acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
-        além do conhecimento técnico. 
-        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+        além do <br> conhecimento técnico. 
+        A nossa missão é te preparar para que você conecte-se com as melhores <br> oportunidades.
       </p>
     </section>
   </main>
-  <footer>
+  <hr id="linha3">
+  <footer id="footer">
     <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+    <p>Acesse <a id="link-footer" href="https://dio.me">Dio.me</a> e se cadastre agora</p>
   </footer>
 </body>
 </html>
